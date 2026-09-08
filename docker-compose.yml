@@ -1,0 +1,11 @@
+services:
+  nut-ups:
+    build:
+      context: .
+      dockerfile: Dockerfile.txt
+    container_name: nut-ups
+    ports:
+      - "3493:3493" # Expse configurated port in upsd.conf
+    volumes:
+      - ./data:/data # Map local folder "data" to folder "/data" that wait run.sh
+    restart: always

@@ -1,0 +1,7 @@
+{
+  "device_name": "eaton_ups",
+  "driver": "netxml-ups",
+  "port": "http://IP_UPS:PORT",
+  "username": "admin",
+  "password": "password"
+}
